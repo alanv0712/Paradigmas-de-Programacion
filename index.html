@@ -4,71 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Mi Horario de Clases Alan Varela</title>
 </head>
 <body>
 
-<table border="1">
-    <thead>
-        <th>Horarios</th>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miercles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-      
-    </thead>
-
-    <tr>
-        <td>08:00 - 09:00</td>
-        <td>Fundamentos de Base de Datos</td>
-        <td>Fundamentos de Base de Datos</td>
-        <td></td>
-        <td></td>
-        <td>Seminario de Investigacion I</td>
-    </tr>
-    <tr>
-        <td>09:00 - 10:00</td>
-        <td>Fundamentos de Base de Datos</td>
-        <td>Fundamentos de Base de Datos</td>
-        <td>Investigacion de Operaciones I</td>
-        <td>Investigacion de Operaciones I</td>
-        <td>Seminario de Investigacion I</td>
-    </tr>   
-        
-    <tr>
-        <td>10:00 - 11:00</td>
-        <td>Investigacion de Operaciones I</td>
-        <td>Investigacion de Operaciones I</td>
-        <td>Paradigmas de Programacion</td>
-        <td>Paradigmas de Programacion</td>
-    </tr>
-        
-    <tr>
-        <td>11:00 - 12:00</td>
-        <td>Desarrollo basado den Plataformas</td>
-        <td>Desarrollo basado den Plataformas</td>
-        <td>Paradigmas de Programacion</td>
-        <td>Paradigmas de Programacion</td>
-    </tr>
-        
-    <tr>
-        <td>12:00 - 13:00</td>
-        <td>Desarrollo basado den Plataformas</td>
-        <td>Desarrollo basado den Plataformas</td>
-        <td>Sistemas de Busqueda y Razonamiento</td>
-        <td>Sistemas de Busqueda y Razonamiento</td>
-    </tr>
-        
-    <tr>
-        <td>13:00 - 14:00</td>
-        <td>Sistemas de Busqueda y Razonamiento</td>
-        <td>Sistemas de Busqueda y Razonamiento</td>
-    </tr>
-        
+    <div class="container" id="myDiv">
+        <table class="table table-bordered text-center">
+            <thead>
+                <th>Horarios</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            
+            </thead>
     
+            <tr>
+                <td>08:00 09:00</td>
+                <td class="bg-success text-light">Fundamentos de Base de Datos</td>
+                <td class="bg-success text-light">Fundamentos de Base de Datos</td>
+                <td class="bg-secondary"></td>
+                <td class="bg-secondary"></td>
+                <td class="bg-success text-light">Seminario de Investigacion I</td>
+            </tr>
+            <tr>
+                <td>09:00 10:00</td>
+                <td class="bg-success text-light">Fundamentos de Base de Datos</td>
+                <td class="bg-success text-light">Fundamentos de Base de Datos</td>
+                <td class="bg-success text-light">Investigacion de Operaciones I</td>
+                <td class="bg-success text-light">Investigacion de Operaciones I</td>
+                <td class="bg-success text-light">Seminario de Investigacion I</td>
+            </tr>   
+                
+            <tr>
+                <td>10:00 11:00</td>
+                <td class="bg-success text-light">Investigacion de Operaciones I</td>
+                <td class="bg-success text-light">Investigacion de Operaciones I</td>
+                <td class="bg-success text-light">Paradigmas de Programacion</td>
+                <td class="bg-success text-light">Paradigmas de Programacion</td>
+                <td class="bg-secondary"></td>
+            </tr>
+                
+            <tr>
+                <td>11:00 12:00</td>
+                <td class="bg-danger text-light">Desarrollo basado en Plataformas</td>
+                <td class="bg-danger text-light">Desarrollo basado en Plataformas</td>
+                <td class="bg-success text-light">Paradigmas de Programacion</td>
+                <td class="bg-success text-light">Paradigmas de Programacion</td>
+                <td class="bg-secondary"></td>
+            </tr>
+                
+            <tr>
+                <td>12:00 13:00</td>
+                <td class="bg-danger text-light">Desarrollo basado en Plataformas</td>
+                <td class="bg-danger text-light">Desarrollo basado en Plataformas</td>
+                <td class="bg-success text-light">Sistemas de Busqueda y Razonamiento</td>
+                <td class="bg-success text-light">Sistemas de Busqueda y Razonamiento</td>
+                <td class="bg-secondary"></td>
+            </tr>
+                
+            <tr>
+                <td>13:00 14:00</td>
+                <td class="bg-success text-light">Sistemas de Busqueda y Razonamiento</td>
+                <td class="bg-success text-light">Sistemas de Busqueda y Razonamiento</td>
+                <td class="bg-secondary"></td>
+                <td class="bg-secondary"></td>
+                <td class="bg-secondary"></td>
+            </tr>
+        </table>
 
-</table>
-    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
