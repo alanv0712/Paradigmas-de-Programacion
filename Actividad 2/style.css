@@ -2,3 +2,16 @@
     height: 150px;
     width: 150px;
 }
+
+#myButtonStyle{
+    background-color: darkred;
+    color: white;
+}
+
+#myHeaderStyle{
+    color: purple;
+}
+
+#myNameStyle{
+    font-weight: bolder;
+}

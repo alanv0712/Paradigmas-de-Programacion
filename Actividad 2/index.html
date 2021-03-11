@@ -15,8 +15,8 @@
             </div>
 
             <div class="col text-center">
-                <h1 class="display-4">Formulario</h1>
-                <p class="lead">Alan Varela</p>        
+                <h1 id="myHeaderStyle" class="display-4">Formulario</h1>
+                <p id="myNameStyle" class="lead">Alan Varela</p>        
             </div>
 
             <div class="col text-center">
@@ -27,22 +27,22 @@
         <form action="http://3.88.130.135/paradigmas/actividad_dos.php" method="post">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input id="name" class="form-control" name="name" type="text">
+                <input id="name" class="form-control" name="name" type="text" placeholder="John Doe">
             </div>
 
             <div class="mb-3">
                 <label class="form-label" id="tagStyleEmail" for="email">Email Address</label>
-                <input class="form-control" id="email" name="email" type="email" aria-describedby="emailhelp">
-                <div id="emailhelp" class="form-text">We wont share your email with anyone</div>
+                <input class="form-control" id="email" name="email" type="email" aria-describedby="emailhelp" placeholder="email@example.com">
+                
             </div>
 
             <div class="mb-3">
                 <label class="form-label" id="tagStyleMessage" for="message">Message</label>
-                <textarea class="form-control" placeholder="Leave a message"></textarea>
+                <textarea name="message" class="form-control" placeholder="Leave a message"></textarea>
             </div>
 
             <div class="myDiv">
-                <input type="submit" class="btn btn-primary" value="submit">
+                <button type="submit" id="myButtonStyle" class="btn btn-large btn-block">Submit</button>
             
             </div>
         
