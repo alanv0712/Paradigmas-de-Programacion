@@ -1,16 +1,4 @@
-.myDiv{
-    margin-top: 20px;
-}
-
-#tagStyleNombre{
-    margin-right: 20px;
-}
-
-#tagStyleEmail{
-    margin-right: 35px;
-}
-
-#tagStyleMessage{
-    margin: auto;
-    width: 50%;
+.imageStyle{
+    height: 150px;
+    width: 150px;
 }

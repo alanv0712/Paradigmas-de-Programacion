@@ -3,38 +3,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <a href="https://uach.mx/"><img class="imageStyle" src="/logos/escudo_uach copy.jpg" alt=""></a>
+            </div>
 
-    <h1>Formulario</h1>
+            <div class="col text-center">
+                <h1 class="display-4">Formulario</h1>
+                <p class="lead">Alan Varela</p>        
+            </div>
 
-    <form action="http://3.86.220.212/paradigmas/actividad_dos.php" method="post">
-        <div class="myDiv">
-            <label id="tagStyleNombre" for="name">Nombre</label>
-            <input id="name" name="name" type="text">
+            <div class="col text-center">
+                <a href="http://www.fing.uach.mx/"><img class="imageStyle" src="/logos/logo ingenieria.png" alt=""></a>
+            </div>
         </div>
 
-        <div class="myDiv">
-            <label  id="tagStyleEmail" for="email">Email</label>
-            <input id="email" name="email" type="email">
-        </div>
+        <form action="http://3.88.130.135/paradigmas/actividad_dos.php" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input id="name" class="form-control" name="name" type="text">
+            </div>
 
-        <div class="myDiv">
-            <label id="tagStyleMessage" for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="4"></textarea>
-        </div>
+            <div class="mb-3">
+                <label class="form-label" id="tagStyleEmail" for="email">Email Address</label>
+                <input class="form-control" id="email" name="email" type="email" aria-describedby="emailhelp">
+                <div id="emailhelp" class="form-text">We wont share your email with anyone</div>
+            </div>
 
-        <div class="myDiv">
-            <input type="submit" value="submit">
-        </div>
+            <div class="mb-3">
+                <label class="form-label" id="tagStyleMessage" for="message">Message</label>
+                <textarea class="form-control" placeholder="Leave a message"></textarea>
+            </div>
+
+            <div class="myDiv">
+                <input type="submit" class="btn btn-primary" value="submit">
+            
+            </div>
+        
+        
+        
+        
+        
+        </form>
+
+</div>
     
-    
-    
-    
-    
-    </form>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
