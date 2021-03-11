@@ -3,6 +3,10 @@
     width: 150px;
 }
 
+.myLinkStyle{
+    margin-top: 80px;
+}
+
 #myButtonStyle{
     background-color: darkred;
     color: white;
@@ -15,3 +19,4 @@
 #myNameStyle{
     font-weight: bolder;
 }
+
