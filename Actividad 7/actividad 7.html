@@ -24,36 +24,28 @@
                     <input class="form-control" type="text" id="number2" placeholder="Numero 2">
                 </div>
             </div>
-            <div class="row margins d-flex align-items-center justify-content-center">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="operacion" id="sumar" value="1" checked>
-                    <label class="form-check-label" for="sumar">
-                      Sumar
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="operacion" id="restar" value="2">
-                    <label class="form-check-label" for="restar">
-                      Restar
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="operacion" id="dividir" value="3">
-                    <label class="form-check-label" for="dividir">
-                      Dividir
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="operacion" id="multiplicar" value="4">
-                    <label class="form-check-label" for="multiplicar">
-                      Multiplicar
-                    </label>
-                  </div>
+            <div class="form-row margins d-flex align-items-center justify-content-center">
+              <div class="form-group col"></div>
+              <div class="form-group">
+                <select class="form-group form-control" id="opcion">
+                  <option value="">Seleccionar</option>
+                  <option value="1">Sumar</option>
+                  <option value="2">Restar</option>
+                  <option value="3">Multiplicar</option>
+                  <option value="4">Dividir</option>
+                </select>
+              </div>
+              <div class="form-group col"></div>
 
             </div>
+            
         </form> 
-        <button class="btn btn-primary margins text-center" onclick="calculate(document.getElementById('number1').value, document.getElementById('number2').value, document.querySelector('input:radio[name=operacion]:checked')).value">Calcular</button>
-        <p class="display-4 text text-center margins" id="resultado"></p>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center">
+      <button class="btn btn-primary btn-lg margins" onclick="calculate(document.getElementById('number1').value, document.getElementById('number2').value, document.getElementById('opcion').value)">Calcular</button>
+    </div>
+    <div class="container text-center">
+      <p class="display-4 text text-center margins" id="resultado"></p>
     </div>
     
 
