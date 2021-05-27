@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <h1>Biblioteca</h1>
+    <h1 class="display-3">Biblioteca</h1>
 
   <div class="topMargin">
     <form @submit.prevent="estatusEditar ? actualizarLibro() : crearLibros()">
@@ -14,9 +14,9 @@
           <input class="form-control" type="text" v-model="autor" placeholder="Autor del Libro">
         </div>
         <div class="col">
-          <button class="btn btn-primary btn-lg" type="submit">{{ estatusEditar ? "Editar Libro": "Agregar Libro"}}</button>
+          <button class="btn btn-success buttonMargin" type="submit">{{ estatusEditar ? "Editar Libro": "Agregar Libro"}}</button>
         
-          <button class="btn btn-primary" v-if="estatusEditar" @click="estatusEditar= false, titulo ='', autor=''" >Cancelar</button>
+          <button class="btn btn-success" v-if="estatusEditar" @click="estatusEditar= false, titulo ='', autor=''" >Cancelar</button>
         </div>
       </div>
     </form>
@@ -26,9 +26,10 @@
 
     <div class="topMargin">
 
-      <ul class="list-unstyled"> 
+      <ul class="list-group-flush"> 
         <li class="list-group-item" v-for="book in books" :key="book.id">
-          <strong>Titulo:</strong> <em>{{book.titulo}}</em> <strong>Autor:</strong> <em>{{book.autor}}</em>  <button class="btn btn-danger buttonMargin leftMargin" @click="eliminarLibro(book)">Eliminar</button>
+          <p><strong>Titulo:</strong> <em>{{book.titulo}}</em></p> <p><strong>Autor:</strong> <em>{{book.autor}}</em></p> 
+          <button class="btn btn-danger buttonMargin" @click="eliminarLibro(book)">Eliminar</button>
           <button class="btn btn-warning buttonMargin" @click="editarLibro(book)">Editar</button>
         </li>
       </ul>
